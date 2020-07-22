@@ -69,7 +69,9 @@ function generatePassword() {
         } return password.join("")
       } 
       else {
-        alert("Your character length is invalid. Please refresh the page and try again.")
+        alert("Your character length is invalid. Please refresh the page and try again.") {
+          return 
+        }
       }
     }
   }
