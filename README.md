@@ -19,5 +19,5 @@ As I continue to develop this project i'd like to add the following two features
 
 New features to come as inspiration strikes!
 
-![PasswordGenerator](https://github.com/jepoy92/Generate-a-New-Password/blob/master/PasswordGenerator.PNG)
+![PasswordGenerator](https://github.com/jepoy92/Generate-a-New-Password/blob/master/Develop/PasswordGenerator.PNG)
  
