@@ -15,4 +15,6 @@ In the event the user does not wish to create a customized password they may gen
 As this projects continues to develop i'd like to add the following two features
     - Button which can hide the password after it's generated
     - Button which allows the user to copy the password after it's been generated
+
+![PasswordGenerator](PasswordGenerator.png)
  
