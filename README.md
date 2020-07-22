@@ -1,48 +1,18 @@
-# 03 JavaScript: Password Generator
+# Password Generator Project
 
-Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+Greetings, in the world of faulty cyber security and user information leaks passwords are our only sentinel against dubious hackers. As such, generating a strong password is a necessity in this day and age and it is for this reason I have created a tool to protect our google searches from nefarious fiends. No one is gonna know what amazon purchases we make on our watch. 
 
-If you are unfamiliar with special characters, take a look at [some examples](https://www.owasp.org/index.php/Password_special_characters).
+## Custom Password 
 
-## User Story
+Most passwords are required to be within a certain character limit as well as be made from various character types which vary far and wide across websites. If the user wishes to create a create a customized password based on the specifications on their website just clicks on the "Custom Password" button and is then presented with a series of prompts asking the user: how long they want their password to be and if they wish to include upper or lower case letters, numbers, or special symbols. The button then combines all of these characters and shuffles them into a password that is set to the user's specified length. The character length is set to be between 8 to 128 characters to accomodate whatever length they may require. As such, if the user chooses a character length that goes outside of the bounds of this range they are prompted with an alert that asks them to refresh the page and start over.
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+## Default Password
 
-## Acceptance Criteria
+In the event the user does not wish to create a customized password they may generate a default password by clicking the "Default Password" button. The button essentialy works the same as the "Custom Password" button but includes all password options and sets the character length to 16. This button is to facilitate users who need a password quick and do not wish to go through the "Custom Button" password prompts.
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN prompted for character types to include in the password
-THEN I choose lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+## Possible improvements
 
-The following image demonstrates the application functionality:
-
-![password generator demo](./Assets/03-javascript-homework-demo.png)
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+As this projects continues to develop i'd like to add the following two features
+    - Button which can hide the password after it's generated
+    - Button which allows the user to copy the password after it's been generated
+ 

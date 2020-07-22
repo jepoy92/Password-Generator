@@ -9,8 +9,8 @@
 // After the parameters have been set the user can click a box that puts everything together
 // Assignment Code
 // Assignment Code
-var generateBtn = document.getElementById("generate");
-var generateDefault = document.getElementById("default")
+var generateBtn = document.getElementById("customPassword");
+var generateDefault = document.getElementById("defaultPassword")
 
 // variables containing arrays for each password option 
 const upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split('');
