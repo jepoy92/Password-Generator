@@ -48,12 +48,12 @@ function generatePassword() {
           passwordCharOptions.push(syms[Math.floor(Math.random()*syms.length)])
         }
           }
-        console.log(passwordCharOptions)
-
+        // password variable set to empty array to push new array of randomized characters based on the user's input
         let password = []
         for (var i = 0; i < passwordLength; i++) {
-          
+  
          password.push(passwordCharOptions[Math.floor(Math.random()*passwordCharOptions.length)]);
+        //  shuffles the passwords using Fisher Yates shuffle algorithim
          let shufflePassword = password => {
           for (let i = password.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -61,10 +61,11 @@ function generatePassword() {
             password [i]  = password [j];
             password [j] = temp;
           }
+          // returns new password array
           return password
           console.log(password)
         }
-        // add a default option
+        // returns password array as a string value
         } return password.join("")
       } 
       else {
@@ -72,16 +73,16 @@ function generatePassword() {
       }
     }
   }
-
+  // Function to create a default password in case user does not want to choose between the options. Chooses all options instead
   function generateDefaultPassword() {
+    // empty array to push the randomized arrays of all password options
     let passwordCharOptions = []
-    // Options the user can choose from: Upper/lowercase letters, numbers, and special symbols
     const includeUpper = true
     const includeLower = true
     const includeNumber = true
     const includeSpecial = true
 
-    // For loop to randomize each option's array based on the if statement that is triggered by the user's choice
+    // For loop for each of the if statements which randomizes each option's array
     for (var i = 0; i <= 16; i++) {
     
     if(includeUpper) {
@@ -98,7 +99,7 @@ function generatePassword() {
     }
       }
     console.log(passwordCharOptions)
-
+    // empty array to push the randomized array of all the password options
     let password = []
     
     for (var i = 0; i <= 16 ; i++) {
@@ -112,13 +113,14 @@ function generatePassword() {
         password [i]  = password [j];
         password [j] = temp;
       }
+      // returns the new array of the randomized password options
       return password
     }
-    // add a default option
+    // returns password array as a string value
     } return password.join("")
   }
       
-// Write password to the #password input
+// Writes password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.getElementById("password");
@@ -126,7 +128,7 @@ function writePassword() {
   passwordText.value = password;
 
 }
-
+// Writes the default password to the #password 
 function writeDefault() {
   var defaultPassword = generateDefaultPassword();
   var defaultPasswordText = document.getElementById("password");
@@ -137,5 +139,6 @@ function writeDefault() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+// Add event listener to the default button
 generateDefault.addEventListener("click", writeDefault);
 
